@@ -1,11 +1,13 @@
 var $ = require('node').all;
 var Base = require('base');
-/*
+var Base = require('../build/index.css');
+//../build
+    /*
     function Agiledialog(config){
         Agiledialog.superclass.constructor.call(this, config);
-    }
-*/
-var Agiledialog = Base.extend({
+    }*/
+
+    var Agiledialog = Base.extend({
     initializer: function() {
         var self = this;
         self.buildDom();
