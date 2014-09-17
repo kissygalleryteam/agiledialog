@@ -19,9 +19,9 @@
             }
         }
     });
-    KISSY.use('kg/agiledialog/1.0.0/index', function (S, Agiledialog) {
+    KISSY.use('kg/agiledialog/1.0.0/index',['./index.css'], function (S, Agiledialog) {
         S.one('#one').on('click',function(){
-
+            debugger;
             new Agiledialog({
                 type:'alert'
             });
