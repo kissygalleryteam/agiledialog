@@ -4,7 +4,7 @@ KISSY.config('modules',{
         "requires": [
             "node",
             "base",
-            "../build/index.css"
+            "./index.css"
         ]
     }
 });
