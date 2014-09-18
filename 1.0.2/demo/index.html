@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Agiledialog的demo</title>
-    <link rel="stylesheet" href="http://g.alicdn.com/kg/agiledialog/1.0.2/index-min.css"/>
+    <link rel="stylesheet" href="http://g.alicdn.com/kg/agiledialog/1.0.0/index-min.css"/>
     <script src="http://g.tbcdn.cn/kissy/k/1.4.6/seed-min.js" charset="utf-8"></script>
 </head>
 <body>
@@ -14,21 +14,17 @@
 <p><button id="confirm">点击我confirm</button></p><br>
 <script>
     var S = KISSY;
-    if (S.Config.debug) {
-        var debugPath = "../build";
-        S.config({
-            packages:[
-                {
-                    name:"kg/agiledialog/1.0.2",
-                    path:debugPath,
-                    charset:"utf-8",
-                    ignorePackageNameInUri:true
-                }
-            ]
-        });
-    }
-
-    S.use('kg/agiledialog/1.0.2/index', function (S, Agiledialog) {
+    S.config({
+        packages:[
+            {
+                name:"kg",
+                path:"http://g.tbcdn.cn/kg/",
+                charset:"utf-8",
+                ignorePackageNameInUri:true
+            }
+        ]
+    });
+    S.use('kg/agiledialog/1.0.0/index', function (S, Agiledialog) {
         S.one('#dialog').on('click',function(){
             new Agiledialog();
         });

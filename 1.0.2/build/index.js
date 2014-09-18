@@ -1,13 +1,14 @@
 /*
-Wed Sep 17 2014 19:10:01 GMT+0800 (CST)
+Thu Sep 18 2014 10:36:55 GMT+0800 (CST)
 combined files by KMD:
 
 index.js
 */
 
-KISSY.add('kg/agiledialog/1.0.0/index',["node","base"],function(S ,require, exports, module) {
+KISSY.add('kg/agiledialog/1.0.2/index',["node","base","../build/index.css"],function(S ,require, exports, module) {
 var $ = require('node').all;
 var Base = require('base');
+require('../build/index.css');
 
 var Agiledialog = Base.extend({
     initializer: function() {
