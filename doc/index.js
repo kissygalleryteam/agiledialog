@@ -1,5 +1,6 @@
 var $ = require('node').all;
 var Base = require('base');
+require('../build/index.css');
 
 var Agiledialog = Base.extend({
     initializer: function() {

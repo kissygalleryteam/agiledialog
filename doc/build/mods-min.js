@@ -1,1 +1,1 @@
-KISSY.config("modules",{"kg/agiledialog/1.0.0/index":{requires:["node","base"]}});
+KISSY.config("modules",{"kg/agiledialog/1.0.2/index":{requires:["node","base","./index.css"]}});
