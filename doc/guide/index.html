@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>agiledialog</title>
+    <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com-prettify.css">
+    <link rel="stylesheet" href="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com.css">
+    <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://cdn.staticfile.org/prettify/r298/prettify.min.js"></script>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.8/seed-min.js" data-config="{combine:true}"></script>
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <div id="header"><a href="http://docs.kissyui.com/" class="logo">kissy</a>
+      <nav><a href="http://docs.kissyui.com/1.4/docs/html/coms.html">优秀组件推荐</a></nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar">
+          <ul data-spy="affix" data-offset-top="0" class="nav nav-list bs-docs-sidenav"></ul>
+        </div>
+        <div class="span9 bs-docs-content">
+          <h1 data-id="undefined" class="title">agiledialog</h1>
+          <p class="author-wrapper"><span>组件有问题？旺旺联系作者：</span><a href="https://github.com/dingyanqiang" target="_blank" data-name="诗俊" class="author"><img src="https://avatars.githubusercontent.com/u/1726029?v=3&amp;s=60" alt="诗俊"></a><span class="author-name">诗俊</span>
+          </p>
+          <div class="common-link"><a href="../demo/index.html" target="_blank" class="demo">示例</a><a href="https://github.com/kissygalleryteam/agiledialog" target="_blank" class="source">源码</a></div>
+          <p class="com-info"><span class="info-label">View</span><span data-com="agiledialog" class="J_View">849</span></p>
+          <p class="com-info"><span class="info-label">所属分类</span><a href="http://kpm.taobao.net/list/弹出层&amp;提示">弹出层&amp;提示</a>
+          </p>
+          <p class="com-info"><span class="info-label">kissy版本</span><span>1.4.X</span>
+          </p><h2 id="-">综述</h2>
+<p>Agiledialog灵活的，可爱的弹出层插件。</p>
+<p>不支持IE6</p>
+<h2 id="-">初始化组件</h2>
+<pre><code>var S = KISSY;
+    S.config({
+        packages:[
+            {
+                name:&quot;kg&quot;,
+                path:&quot;http://g.tbcdn.cn/kg/&quot;,
+                charset:&quot;utf-8&quot;,
+                ignorePackageNameInUri:true
+            }
+        ]
+    });
+
+S.use(&#39;kg/agiledialog/1.0.2/index&#39;, function (S, Agiledialog) {
+    //Dialog 默认
+     var dialog = new Agiledialog({
+        title:&#39;dialogTitle&#39;,
+        content:&#39;dialogContent&#39;,
+        onConfirm:function(){},
+        onCancel:function(){}
+     });
+     var alert = new Agiledialog({
+        type:&#39;alert&#39;,
+        content:&quot;alertText&quot;
+     });
+     var alert = new Agiledialog({
+         type:&#39;confirm&#39;,
+         content:&quot;alertText&quot;
+     });
+})
+</code></pre><h2 id="api-">API说明</h2>
+<p>type:设置弹出层类型 alert||confirm||dialog</p>
+<p>onCancel:function(){} 取消按钮的回调函数</p>
+<p>onConfirm:function(){}确认按钮的回调函数</p>
+<p>title:dialog弹出层标题
+content:弹出层文本内容
+footHtml:可自定义按钮 提示(取消按钮必须有closeBtn 确定按钮必须有saveBtn)
+posType:弹窗定位类型 fixed||absolute 默认fixed</p>
+
+          <div style="display:none;"><script type="text/javascript" src="http://tajs.qq.com/stats?sId=36378479" charset="UTF-8"></script></div>
+          <script src="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
