@@ -1,0 +1,13 @@
+{
+    "name": "agiledialog",
+    "version": "1.0.2",
+    "main": "index.js",
+    "ignore": [
+        "**/*",
+        "!index.js",
+        "!index.css",
+        "!lib/**/*"
+    ],
+    "dependencies": {
+    }
+}
