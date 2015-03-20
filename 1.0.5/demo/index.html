@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Agiledialog的demo</title>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.8/seed-min.js" charset="utf-8"></script>
+</head>
+<body>
+<h2>Agiledialog的demo</h2>
+
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var debugPath = "http://localhost:8787/";
+        S.config({
+            packages:[
+                {
+                    name:"kg/agiledialog/1.0.5",
+                    path:debugPath,
+                    charset:"utf-8"
+                }
+            ]
+        });
+    }
+
+    S.use('kg/agiledialog/1.0.5/index', function (S, Agiledialog) {
+        new Agiledialog({
+            type:'alert',
+            skin:'orangeSkin',
+            content:'okContent'
+        });
+    })
+</script>
+</body>
+</html>
+
