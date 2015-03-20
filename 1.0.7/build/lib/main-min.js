@@ -1,0 +1,1 @@
+KISSY.add("kg/agiledialog/1.0.7/lib/main",["node","base"],function(i,a,e,n){var d=(a("node").all,a("base"));n.exports=d.extend({initializer:function(){}},{ATTRS:{}})});

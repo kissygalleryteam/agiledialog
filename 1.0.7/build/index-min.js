@@ -1,0 +1,1 @@
+KISSY.add("kg/agiledialog/1.0.7/index",["base","node"],function(e,t,n,a){var i,r=t("base"),o=t("node");i=function(e){var t=o.all,n=r,a=n.extend({initializer:function(){{var e=this;e.get("$target")}}},{ATTRS:{$target:{value:"",getter:function(e){return t(e)}}}});return e=a}(),a.exports=i});

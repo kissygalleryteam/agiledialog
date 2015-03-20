@@ -1,0 +1,1 @@
+KISSY.config("requires",{"kg/agiledialog/1.0.7/index":["node","base"],"kg/agiledialog/1.0.7/lib/main":["node","base"]});
